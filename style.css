@@ -1,0 +1,202 @@
+table{
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+table th{
+    display: none;
+    
+}
+
+table td{
+    display: flex;
+        flex-direction: column;
+    padding-bottom: 10px;
+    
+}
+
+tbody tr{
+    border: 2px solid lightblue;
+}
+
+
+td::before{
+    content: attr(data-attr);
+    font-weight: bold;
+}
+
+tr:nth-of-type(even){
+    background-color: red;
+}
+
+
+
+@media(min-width:768px){
+    table{
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+   
+    thead tr th{
+        display: table-cell;
+        background-color: aqua;
+        border: 2px solid black;
+        
+    }
+
+    table tr td{
+        display: table-cell ;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    td::before{
+        content: '';
+        font-weight: bold;
+    }
+    tbody tr{
+        border: 2px solid lightblue;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: black;
+    text-align: left;
+    color: white;
+    text-transform: capitalize;
+}
+td{
+    padding: 5px;
+    font-size: 20px;
+}
+
+tr:nth-of-type(even){
+    background-color: blue;
+}
+
+tr:nth-of-type(odd){
+    background-color: yellowgreen;
+}
+
+
+@media(max-width:440px){
+    table{
+        border: 5px solid red;
+    }
+    th{
+        display: none;
+      
+    }
+    td{
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+
+    }
+
+    td:nth-of-type(1)::before{
+        content: "name" ": ";
+        color: white;
+    }
+
+    td:nth-of-type(2)::before{
+        content: "pole" ": ";
+        color: white;
+    }
+
+    td:nth-of-type(3)::before{
+        content: "wins" ": ";
+        color: white;
+    }
+
+    td:nth-of-type(4)::before{
+        content: "points" ": ";
+        color: white;
+    }
+    td:nth-of-type(5)::before{
+        content: "podium" ": ";
+        color: white;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+ 
+@media (max-width:440px) {
+     
+     table{
+        border: 2px solid red;
+     }
+      
+     th{
+        display: none;
+     }
+
+     td{
+        display: block;
+        margin: 10px;
+     }
+
+     td:nth-of-type(even){
+        background-color: red;
+     }
+} */
